@@ -1,0 +1,9 @@
+{
+  "name" : "body",
+  "category" : "ptforcemonster",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "ptforcemonster.png"
+  }
+}

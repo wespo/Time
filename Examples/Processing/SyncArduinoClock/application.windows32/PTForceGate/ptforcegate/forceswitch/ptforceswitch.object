@@ -1,0 +1,49 @@
+{
+  "objectName" : "ptforceswitch",
+  "rarity" : "Rare",
+  "objectType" : "wire",
+  "description" : "Controller for force nodes.",
+  "shortdescription" : "Force Gate Switch",
+  "race" : "generic",
+
+  "category" : "wire",
+  "price" : 1,
+
+  "inventoryIcon" : "ptforceswitchicon.png",
+  "orientations" : [
+    {
+      "image" : "ptforceswitchpreview.png",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "direction" : "right"
+    }
+  ],
+
+  "scripts" : [ "ptforceswitch.lua" ],
+  "scriptDelta" : 30,
+
+  "animation" : "ptforceswitch.animation",
+
+  "animationParts" : {
+    "switch" : "ptforceswitch.png",
+    "onoff" : "/ptforcegate/forceswitchcompact/onoffindicator.png",
+    "leftrighttop" : "leftrighttop.png",
+    "leftrightbottom" : "leftrightbottom.png",
+    "updownleft" : "updownleft.png",
+    "updownright" : "updownright.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  "inboundNodes" : [
+    [2, 1],
+    [1, 1],
+    [1, 0],
+    [0, 0],
+    [2, 0]
+  ],
+  
+  "outboundNodes" : [
+    [0, 1]
+  ]
+}

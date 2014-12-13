@@ -1,0 +1,112 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "onoff" : {
+        "default" : "on",
+        "states" : {
+          "off" : {
+            "frames" : 1
+          },
+          "on" : {
+            "frames" : 1
+          }
+        }
+      },
+      "leftright" : {
+        "default" : "left",
+        "states" : {
+          "left" : {
+            "frames" : 1
+          },
+          "right" : {
+            "frames" : 1
+          }
+        }
+      },
+      "updown" : {
+        "default" : "up",
+        "states" : {
+          "up" : {
+            "frames" : 1
+          },
+          "down" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+    "parts" : {
+      "switch" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0],
+          "zLevel" : 1,
+          "image" : "<partImage>"
+        }
+      },
+      "onoff" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [1, 1],
+          "zLevel" : 2
+        },
+        "partStates" : {
+          "onoff" : {
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:on"
+              }
+            },
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:off"
+              }
+            }
+          }
+        }
+      },
+      "leftright" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [1, 0],
+          "zLevel" : 2
+        },
+        "partStates" : {
+          "leftright" : {
+            "left" : {
+              "properties" : {
+                "image" : "<partImage>:left"
+              }
+            },
+            "right" : {
+              "properties" : {
+                "image" : "<partImage>:right"
+              }
+            }
+          }
+        }
+      },
+      "updown" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0],
+          "zLevel" : 2
+        },
+        "partStates" : {
+          "updown" : {
+            "up" : {
+              "properties" : {
+                "image" : "<partImage>:up"
+              }
+            },
+            "down" : {
+              "properties" : {
+                "image" : "<partImage>:down"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

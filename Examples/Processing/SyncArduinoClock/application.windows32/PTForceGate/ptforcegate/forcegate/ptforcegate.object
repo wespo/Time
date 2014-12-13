@@ -1,0 +1,44 @@
+{
+  "objectName" : "ptforcegate",
+  "rarity" : "Rare",
+  "objectType" : "wire",
+  "description" : "Wow, such gate, very speed.",
+  "shortdescription" : "Force Gate Node",
+  "race" : "generic",
+
+  "category" : "wire",
+  "price" : 1,
+
+  "inventoryIcon" : "ptforcegateicon.png",
+  "orientations" : [
+    {
+      "image" : "ptforcegate.png:off",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      //"anchors" : [ "background" ],
+      "direction" : "right"
+    }
+  ],
+
+  "scripts" : [ "/forcegateconfig.lua", "ptforcegate.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "ptforcegate.animation",
+
+  "animationParts" : {
+    "gate" : "ptforcegate.png",
+    "direction" : "ptforcegatearrow.png",
+    "beam1" : "ptforcegatebeam.png",
+    "beam2" : "ptforcegatebeam.png",
+    "beam3" : "ptforcegatebeam.png",
+    "beam4" : "ptforcegatebeam.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  "inboundNodes" : [
+    [0, 0]
+  ],
+  
+  "damageTable" : "/ptforcegate/forcegate/forcegateDamage.config"
+}

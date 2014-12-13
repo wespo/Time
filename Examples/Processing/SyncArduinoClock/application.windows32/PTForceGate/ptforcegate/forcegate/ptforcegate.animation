@@ -1,0 +1,155 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "gatestate" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "frames" : 1,
+            "cycle" : 0.5,
+            "mode" : "loop"
+          },
+          "on" : {
+            "frames" : 1,
+            "cycle" : 0.5,
+            "mode" : "loop"
+          }
+        }
+      },
+      "arrowstate" : {
+        "default" : "normal",
+        "states" : {
+          "normal" : {
+            "frames" : 1
+          },
+          "zero" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+    "parts" : {
+      "gate" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0],
+          "zLevel" : 1
+        },
+        "partStates" : {
+          "gatestate" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:off"
+              }
+            },
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:on"
+              }
+            }
+          }
+        }
+      },
+      "direction" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [0, 0],
+          "zLevel" : 2,
+          "rotationGroup" : "direction"
+        },
+        "partStates" : {
+          "arrowstate" : {
+            "normal" : {
+              "properties" : {
+                "image" : "<partImage>:normal"
+              }
+            },
+            "zero" : {
+              "properties" : {
+                "image" : "<partImage>:zero"
+              }
+            }
+          }
+        }
+      },
+      "beam1" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [1, 0.25],
+          "zLevel" : 0,
+          "rotationGroup" : "beam1",
+          "scalingGroup" : "beam1",
+          "image" : "<partImage>"
+        }
+      },
+      "beam2" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [1, 0.25],
+          "zLevel" : 0,
+          "rotationGroup" : "beam2",
+          "scalingGroup" : "beam2",
+          "image" : "<partImage>"
+        }
+      },
+      "beam3" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [1, 0.25],
+          "zLevel" : 0,
+          "rotationGroup" : "beam3",
+          "scalingGroup" : "beam3",
+          "image" : "<partImage>"
+        }
+      },
+      "beam4" : {
+        "properties" : {
+          "centered" : false,
+          "offset" : [1, 0.25],
+          "zLevel" : 0,
+          "rotationGroup" : "beam4",
+          "scalingGroup" : "beam4",
+          "image" : "<partImage>"
+        }
+      }
+    }
+  },
+
+  "scalingGroups" : {
+    "beam1" : {
+      "pivot" : [0.5, 0.5]
+    },
+    "beam2" : {
+      "pivot" : [0.5, 0.5]
+    },
+    "beam3" : {
+      "pivot" : [0.5, 0.5]
+    },
+    "beam4" : {
+      "pivot" : [0.5, 0.5]
+    }
+  },
+  
+  "rotationGroups" : {
+    "direction" : {
+      "rotationCenter" : [0.5, 0.5],
+      "angularVelocity" : 100
+    },
+    "beam1" : {
+      "rotationCenter" : [0.5, 0.5],
+      "angularVelocity" : 100
+    },
+    "beam2" : {
+      "rotationCenter" : [0.5, 0.5],
+      "angularVelocity" : 100
+    },
+    "beam3" : {
+      "rotationCenter" : [0.5, 0.5],
+      "angularVelocity" : 100
+    },
+    "beam4" : {
+      "rotationCenter" : [0.5, 0.5],
+      "angularVelocity" : 100
+    }
+  }
+}

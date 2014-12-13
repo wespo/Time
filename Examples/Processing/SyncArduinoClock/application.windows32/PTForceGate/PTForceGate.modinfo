@@ -1,0 +1,12 @@
+{
+    "name": "PTForceGate",
+    "version": "Beta v. Enraged Koala",
+    "path": ".",
+    "dependencies": [],
+    "metadata": {
+        "author": "PenguinToast",
+        "version": "1.2",
+        "description": "This mod adds force gates to Starbound, allowing you to push everything around!",
+        "support_url": "http://community.playstarbound.com/index.php?threads/force-gates.68712/"
+    }
+}

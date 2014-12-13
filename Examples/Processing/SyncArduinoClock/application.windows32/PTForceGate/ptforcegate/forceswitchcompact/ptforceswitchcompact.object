@@ -1,0 +1,45 @@
+{
+  "objectName" : "ptforceswitchcompact",
+  "rarity" : "Rare",
+  "objectType" : "wire",
+  "description" : "Compact controller for force nodes.",
+  "shortdescription" : "Compact Force Gate Switch",
+  "race" : "generic",
+
+  "category" : "wire",
+  "price" : 1,
+
+  "inventoryIcon" : "ptforceswitchcompactpreview.png",
+  "orientations" : [
+    {
+      "image" : "ptforceswitchcompactpreview.png",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "direction" : "right"
+    }
+  ],
+
+  "scripts" : [ "ptforceswitchcompact.lua" ],
+  "scriptDelta" : 30,
+
+  "animation" : "ptforceswitchcompact.animation",
+
+  "animationParts" : {
+    "switch" : "ptforceswitchcompact.png",
+    "onoff" : "onoffindicator.png",
+    "leftright" : "leftrightarrow.png",
+    "updown" : "updownarrow.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  "inboundNodes" : [
+    [1, 1],
+    [0, 0],
+    [1, 0]
+  ],
+  
+  "outboundNodes" : [
+    [0, 1]
+  ]
+}

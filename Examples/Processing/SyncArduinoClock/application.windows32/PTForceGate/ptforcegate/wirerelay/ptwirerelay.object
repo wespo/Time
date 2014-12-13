@@ -1,0 +1,42 @@
+{
+  "objectName" : "ptwirerelay",
+  "rarity" : "Rare",
+  "objectType" : "wire",
+  "description" : "Relays wire signals. Makes wiring neater.",
+  "shortdescription" : "Wire Relay",
+  "race" : "generic",
+
+  "category" : "wire",
+  "price" : 1,
+
+  "inventoryIcon" : "ptwirerelayicon.png",
+  "orientations" : [
+    {
+      "image" : "ptwirerelay.png:default.off",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "direction" : "right"
+    }
+  ],
+
+  "scripts" : [ "ptwirerelay.lua" ],
+  "scriptDelta" : 30,
+
+  "animation" : "/objects/wired/switch/switchtoggle.animation",
+
+  "animationParts" : {
+    "switch" : "ptwirerelay.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  "outboundNodes" : [
+    [0, 0]
+  ],
+  
+  "inboundNodes" : [
+    [1, 0]
+  ],
+  
+  "damageTable" : "/ptforcegate/forcegate/forcegateDamage.config"
+}
